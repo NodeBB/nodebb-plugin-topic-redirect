@@ -1,7 +1,7 @@
 <form>
     <div class="form-group">
         <label for="tid">Topic ID</label>
-        <input type="text" id="tid" name="tid" class="form-control" placeholder="123" />
+        <input type="number" min="1" id="tid" name="tid" class="form-control" placeholder="123" />
     </div>
     <div class="form-group">
         <label for="type">Redirect Type</label>
