@@ -1,0 +1,17 @@
+{
+	"id": "nodebb-plugin-topic-redirect",
+	"url": "https://github.com/NodeBB/nodebb-plugin-topic-redirect",
+	"library": "./library.js",
+	"hooks": [
+		{ "hook": "static:app.load", "method": "init" },
+		{ "hook": "filter:admin.header.build", "method": "addAdminNavigation" },
+		{ "hook": "response:router.page", "method": "handleTopicRedirect" }
+	],
+	"scripts": [
+		"static/lib/main.js"
+	],
+	"acpScripts": [
+		"static/lib/admin.js"
+	],
+	"templates": "static/templates"
+}

@@ -1,0 +1,47 @@
+{
+  "name": "nodebb-plugin-topic-redirect",
+  "version": "0.0.0",
+  "description": "",
+  "main": "library.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/julianlam/nodebb-plugin-topic-redirect"
+  },
+  "keywords": [
+    "nodebb",
+    "plugin"
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "author": {
+    "name": "Julian Lam",
+    "email": "julian@nodebb.org"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/julianlam/nodebb-plugin-topic-redirect/issues"
+  },
+  "readmeFilename": "README.md",
+  "nbbpm": {
+    "compatibility": "^1.15.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "13.1.0",
+    "@commitlint/config-angular": "13.1.0",
+    "eslint": "7.32.0",
+    "eslint-config-nodebb": "0.0.2",
+    "eslint-plugin-import": "2.24.2",
+    "husky": "7.0.2",
+    "lint-staged": "11.1.2"
+  }
+}
