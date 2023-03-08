@@ -2,7 +2,7 @@
 
 /* globals $, app, socket, define */
 
-define('admin/plugins/topic-redirect', ['settings', 'uploader', 'admin/modules/colorpicker'], function (settings) {
+define('admin/plugins/topic-redirect', ['settings', 'uploader'], function (settings) {
 	var ACP = {};
 
 	ACP.init = function () {
