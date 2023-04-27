@@ -2,7 +2,7 @@
 
 /* globals $, app, socket, define */
 
-define('admin/plugins/topic-redirect', ['settings', 'uploader'], function (settings) {
+define('admin/plugins/topic-redirect', ['settings', 'alerts', 'uploader'], function (settings, alerts) {
 	var ACP = {};
 
 	ACP.init = function () {
@@ -12,7 +12,7 @@ define('admin/plugins/topic-redirect', ['settings', 'uploader'], function (setti
 
 	function saveSettings() {
 		settings.save('topic-redirect', $('.topic-redirect-settings'), function () {
-			app.alert({
+			alerts.alert({
 				type: 'success',
 				alert_id: 'topic-redirect-saved',
 				title: 'Settings Saved',
